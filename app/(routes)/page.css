@@ -1,0 +1,6 @@
+
+@media screen and (min-width: 80rem) {
+  .border-custom {
+    border: 1px solid var(--text-secondary-color);
+  }
+}

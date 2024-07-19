@@ -1,0 +1,18 @@
+@import '@assets/globals.css';
+
+.nav {
+  border-right: solid var(--third-color) 0.1em;
+  background-color: var(--background-secondary-color);
+}
+
+.nav:active {
+  background-color: var(--text-secondary-color);
+}
+
+.burger-menu {
+  border-bottom: solid var(--third-color) 0.1em;
+}
+
+.burger-menu-line {
+  background-color: var(--third-color);
+}

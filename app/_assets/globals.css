@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-primary-color: #FFE45E;
+  --background-secondary-color: #F9F9F9;
+  --text-primary-color: #5AA9E6;
+  --text-secondary-color: #7FC8F8;
+  --third-color: #FF6392;
+}
+
+.background-secondary-color {
+  background-color: var(--background-secondary-color);
+}
+
+body {
+  color: black;
+  background: var(--background-primary-color);
+  background: repeating-linear-gradient(to left top, var(--background-primary-color), var(--background-secondary-color));
+}
+
+@media screen and (min-width: 80rem) {
+  .mainContainer {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr 1fr;
+    height: 100vh;
+    grid-template-areas:
+          "header header header"
+          "nav main main"
+          "footer footer footer";
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
