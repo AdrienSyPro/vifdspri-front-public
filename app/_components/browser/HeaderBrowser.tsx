@@ -1,3 +1,5 @@
+'use client'
+
 import Tooltip from "../Tooltip";
 
 export default function HeaderBrowser() {

@@ -1,9 +1,12 @@
 import "@assets/globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import Header from "../_components/Header";
-import Nav from "../_components/Nav";
-import Footer from "../_components/Footer";
+import { getSelectorsByUserAgent } from "react-device-detect";
+import { headers } from "next/headers";
+import NavBrowser from "../_components/browser/NavBrowser";
+import HeaderBrowser from "../_components/browser/HeaderBrowser";
+import HeaderMobile from "../_components/mobile/HeaderMobile";
+import FooterBrowser from "../_components/browser/FooterBrowser";
 
 const inter = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -17,16 +20,34 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { isMobile } = getSelectorsByUserAgent(
+    headers().get("user-agent") ?? ''
+  );
+
   return (
     <html lang="fr">
       <body className={inter.className}>
         <div className="mainContainer">
-          <Header />
-          <Nav />
+          <header>
+            {!isMobile && <HeaderBrowser />}
+            {isMobile && <HeaderMobile />}
+          </header>
+
+          {!isMobile && (
+            <nav>
+              <NavBrowser />
+            </nav>
+          )}
+          
           <main>
             {children}
           </main>
-          <Footer />
+
+          {!isMobile && (
+            <footer>
+              <FooterBrowser />
+            </footer>
+          )}
         </div>
       </body>
     </html>

@@ -1,3 +1,5 @@
+'use client'
+
 export default function FooterBrowser() {
   return (
     <div className="grid grid-cols-12">
@@ -7,7 +9,7 @@ export default function FooterBrowser() {
       <img className="w-28" src="/react.png" />
       <img className="w-28" src="/nextjs.png" />
       <img className="w-28" src="/vuejs.png" />
-      <img className="w-28" src= "/rust_logo.svg" />
+      <img className="w-28" src="/rust_logo.svg" />
     </div>
   );
 }
