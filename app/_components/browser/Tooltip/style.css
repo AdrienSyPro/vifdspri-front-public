@@ -1,10 +1,9 @@
   @import '@assets/globals.css';
 
   .tooltip .tooltiptext {
-    visibility: hidden;
     background-color: var(--background-primary-color);
     color: black;
-    top: 2.5rem;
+    top: 2rem;
     left: 12.25rem;
     text-align: center;
     border-radius: 6px;

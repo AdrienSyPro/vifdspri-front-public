@@ -1,7 +1,6 @@
 import "@assets/globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { getSelectorsByUserAgent } from "react-device-detect";
 import { headers } from "next/headers";
 import NavBrowser from "../_components/browser/NavBrowser";
 import HeaderBrowser from "../_components/browser/HeaderBrowser";
@@ -20,9 +19,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { isMobile } = getSelectorsByUserAgent(
-    headers().get("user-agent") ?? ''
-  );
+  const isMobile = (headers().get("user-agent") ?? '').indexOf('Mobi') > -1;
 
   return (
     <html lang="fr">
