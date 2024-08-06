@@ -11,7 +11,7 @@ export default function Tooltip({ children }: Props) {
       {children}
       <span className="tooltiptext w-96">
         <span className="font-bold">Bonjour !</span><br />
-        Je m'appelle <strong>Adrien SY</strong> et je suis :
+        Je m&apos;appelle <strong>Adrien SY</strong> et je suis :
         <ul className="font-bold">
           <li>
             {"->"} <a className="hover:underline" href="/skills/fullstack">Développeur Web Fullstack</a>

@@ -3,14 +3,22 @@ export default function Page() {
     <>
       <h1>Software Engineer</h1>
       <p>
-          Given: I'm a Fullstack developer.<br />
+          Given: I&apos;m a Software Engineer.<br />
           When: I work in any project.<br />
-          Then: I modelize and manipulate data, from any datasource. I exchange with the other members of the team.<br />
+          Then: I want to provide the best response to the needs of businesses. I interact with users to adapt their ideas into efficient and reliable software.<br />
       </p>
-      <p>
-        En tant que développeur Senior, j’ai pu acquérir toutes les compétences nécessaires au développement d’un produit logiciel. Autonome, curieux et avec une grande capacité d'adaptation, je maîtrise les concepts fondamentaux et plus avancés du WEB et du software en général, afin de pouvoir être responsable à chaque étape de création du produit et de planifier, construire et maintenir le software.
-        Je cherche constamment à effectuer un travail de qualité en comprenant et apprenant du métier pour lequel le produit est développé, bien comprendre le besoin en utilisant les données pertinentes et avancer de manière agile.
-      </p>
+      <br />
+      <div className="border-custom background-secondary-color lg:rounded-lg	p-5 duration-700 lg:w-1/2 mb-5">
+        <li>
+          <strong>Vision produit</strong>
+        </li>
+        <li>
+          <strong>Prise de responsabilité sur toutes les étapes de vie du produit</strong>
+        </li>
+        <li>
+          <strong>Apprentissage rapide et adaptation au changement</strong>
+        </li>
+      </div>
     </>
   );
 }

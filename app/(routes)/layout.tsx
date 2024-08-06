@@ -2,10 +2,8 @@ import "@assets/globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { headers } from "next/headers";
-import NavBrowser from "../_components/browser/NavBrowser";
-import HeaderBrowser from "../_components/browser/HeaderBrowser";
-import HeaderMobile from "../_components/mobile/HeaderMobile";
-import FooterBrowser from "../_components/browser/FooterBrowser";
+import ContainerMobile from "../_components/mobile/ContainerMobile";
+import ContainerBrowser from "../_components/browser/ContainerBrowser";
 
 const inter = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -25,25 +23,15 @@ export default function RootLayout({
     <html lang="fr">
       <body className={inter.className}>
         <div className="mainContainer">
-          <header>
-            {!isMobile && <HeaderBrowser />}
-            {isMobile && <HeaderMobile />}
-          </header>
-
-          {!isMobile && (
-            <nav>
-              <NavBrowser />
-            </nav>
+          {isMobile && (
+            <ContainerMobile>
+              {children}
+            </ContainerMobile>
           )}
-          
-          <main>
-            {children}
-          </main>
-
           {!isMobile && (
-            <footer>
-              <FooterBrowser />
-            </footer>
+            <ContainerBrowser>
+              {children}
+            </ContainerBrowser>
           )}
         </div>
       </body>
