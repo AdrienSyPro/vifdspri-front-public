@@ -6,8 +6,7 @@ interface Props {
 }
 
 export default function MainMobile({ children }: Props) {
-  const { pageDisplayContext, setPageDisplayContext } = usePageDisplayContext();
-  const isMainBlur = pageDisplayContext?.isMainBlur ?? false;
+  const { pageDisplayContext: { isMainBlur }, setPageDisplayContext } = usePageDisplayContext();
 
   return (
     <main className={clsx({

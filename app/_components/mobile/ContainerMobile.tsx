@@ -10,7 +10,7 @@ export interface Props {
 }
 
 export default function ContainerMobile({ children }: Props) {
-  const [pageDisplayContext, setPageDisplayContext] = useState<PageDisplayContextValue | null>(null);
+  const [pageDisplayContext, setPageDisplayContext] = useState<PageDisplayContextValue>({ isMainBlur: false });
   return (
     <PageDisplayContext.Provider value={{
       pageDisplayContext,

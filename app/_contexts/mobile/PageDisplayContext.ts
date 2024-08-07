@@ -5,8 +5,8 @@ export interface PageDisplayContextValue {
 }
 
 export interface PageDisplayContextInterface {
-  pageDisplayContext: PageDisplayContextValue | null;
-  setPageDisplayContext: Dispatch<SetStateAction<PageDisplayContextValue | null>>;
+  pageDisplayContext: PageDisplayContextValue;
+  setPageDisplayContext: Dispatch<SetStateAction<PageDisplayContextValue>>;
 }
 
 export const PageDisplayContext = createContext<PageDisplayContextInterface | null>(null);

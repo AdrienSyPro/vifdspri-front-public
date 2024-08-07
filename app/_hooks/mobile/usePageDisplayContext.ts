@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { PageDisplayContext } from "@contexts/mobile/PageDisplayContext";
+import { PageDisplayContext, PageDisplayContextInterface } from "@contexts/mobile/PageDisplayContext";
 
-export default function usePageDisplayContext() {
+export default function usePageDisplayContext(): PageDisplayContextInterface {
   const context = useContext(PageDisplayContext);
 
   if (!context) {
