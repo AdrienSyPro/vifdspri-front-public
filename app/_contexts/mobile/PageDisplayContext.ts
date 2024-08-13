@@ -2,6 +2,7 @@ import { createContext, Dispatch, SetStateAction } from "react"
 
 export interface PageDisplayContextValue {
   isMainBlur: boolean;
+  isDisplayMenu: boolean;
 }
 
 export interface PageDisplayContextInterface {

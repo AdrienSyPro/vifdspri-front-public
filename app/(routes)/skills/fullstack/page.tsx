@@ -9,7 +9,7 @@ export default function Page() {
       </p>
       <br />
       <p>
-        En tant que développeur Fullstack, je suis capable d'avoir une vision globale sur l'architecture et les connexions entre les différents services et couches de notre application.
+        En tant que développeur Fullstack, je suis capable d&apos;avoir une vision globale sur l&apos;architecture et les connexions entre les différents services et couches de notre application.
       </p>
     </>
   );

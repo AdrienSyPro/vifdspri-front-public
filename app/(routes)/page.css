@@ -4,3 +4,7 @@
     border: 1px solid var(--text-secondary-color);
   }
 }
+
+.vif-title-block {
+  background-color: var(--text-primary-color);
+}

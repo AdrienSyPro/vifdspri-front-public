@@ -9,6 +9,12 @@ export default function Page() {
         {websiteContent.presentation}
       </TextBlock>
 
+      <TextBlock classes='vif-title-block'>
+        <h2 className="text-center font-bold">
+          Adaptabilité, Autonomie, Engagement
+        </h2>
+      </TextBlock>
+
       <TextBlock>
         {websiteContent.presentation}
       </TextBlock>
