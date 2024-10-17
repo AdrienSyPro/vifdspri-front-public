@@ -10,7 +10,7 @@ export default function BurgerMenu({ absolute, handleClickBurgerMenu }: Props) {
   return (
     <div
       className={clsx(
-        "flex flex-col justify-center items-center w-1/6 h-14 rounded-br-lg nav burger-menu",
+        "flex flex-col justify-center items-center w-1/6 h-12 sm:w-12 sm:h-12 rounded-br-lg shadow-lg cursor-pointer transition-all duration-300",
         {
           "absolute": absolute
         }
