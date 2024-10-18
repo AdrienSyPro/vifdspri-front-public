@@ -1,6 +1,17 @@
 import clsx from "clsx";
 import usePageDisplayContext from "@/app/_hooks/mobile/usePageDisplayContext";
 import Link from "next/link";
+import Image from "next/image";
+
+interface ImageLoaderProps {
+  src: any;
+  width: any;
+  quality?: number | undefined;
+}
+
+const imageLoader = ({ src, width, quality }: ImageLoaderProps) => {
+  return `https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/${src}`;
+}
 
 interface Props {
   children: React.ReactNode;
@@ -28,10 +39,12 @@ export default function MainMobile({ children }: Props) {
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/adrien-sy-541a4488/"
             >
-              <img
+              <Image
+                src="LinkedIn.png"
+                loader={imageLoader}
                 alt="LinkedIn link"
-                src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LinkedIn.png"
                 className="w-5 h-5"
+                width={160} height={160} 
               />
             </a>
             <a
@@ -39,10 +52,11 @@ export default function MainMobile({ children }: Props) {
               rel="noopener noreferrer"
               href="https://github.com/AdrienSyPro"
             >
-              <img
+              <Image
                 alt="GitHub link"
-                src="github.png"
+                src="/github.png"
                 className="w-5 h-5"
+                width={160} height={160} 
               />
             </a>
           </div>

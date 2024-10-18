@@ -39,11 +39,11 @@ export default function Page() {
           <h2 className="text-xl font-bold">Développeur React | Symfony</h2>
           <br />
           <p>
-            <strong>Contexte :</strong> Création d'une application de gestion des centre de tri de déchets
+            <strong>Contexte :</strong> Création d&apos;une application de gestion des centre de tri de déchets
           </p>
           <br />
           <p>
-            Remplacement de l'ancien focntionnement par fichiers excel par une application web moderne en
+            Remplacement de l&apos;ancien fonctionnement par fichiers excel par une application web moderne en
             <TextHighlighted>Symfony</TextHighlighted> et <TextHighlighted>React</TextHighlighted> dans
             un contexte agile.
           </p>
@@ -60,9 +60,9 @@ export default function Page() {
           </p>
           <br />
           <p>
-            Création d'un back-office en Symfony et React,
-            l'objectif étant de migrer l'ensemble des fonctionnalités de l'ancienne version vers la nouvelle version.
-            Intégration d'une équipe en full-remote dans un contexte agile.
+            Création d&apos;un back-office en Symfony et React,
+            l&apos;objectif étant de migrer l&apos;ensemble des fonctionnalités de l&apos;ancienne version vers la nouvelle version.
+            Intégration d&apos;une équipe en full-remote dans un contexte agile.
           </p>
         </div>
       </TextBlock>
