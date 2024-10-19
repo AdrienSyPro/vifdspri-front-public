@@ -28,10 +28,10 @@ export default function NavMobile() {
             </li>
             <li className="text-xl font-semibold hover:text-indigo-400 transition-colors duration-300">
               <Link
-                href="/web-technologies"
+                href="/stack"
                 onClick={handleClickLink}
               >
-                Les technologies WEB que je maîtrise
+                Ma stack technique
               </Link>
             </li>
           </ul>

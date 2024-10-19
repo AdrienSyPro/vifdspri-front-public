@@ -12,8 +12,8 @@ export default function NavBrowser() {
           <Link href="/experiences" className={linkClass}>
             Mon parcours
           </Link>
-          <Link href="/web-technologies" className={linkClass}>
-            Les outils WEB que je maîtrise
+          <Link href="/stack" className={linkClass}>
+            Ma stack technique
           </Link>
         </div>
       </div>
