@@ -7,16 +7,16 @@ export default function Page() {
     <>
       <h2 className="text-3xl font-bold text-center mt-8 mb-8 bg-black text-white p-4">Mon parcours</h2>
 
-      <TextBlock classes="flex">
+      <TextBlock classes="flex lg:min-h-64">
         <ExperienceDuration yearStart="2024" yearEnd="2024" duration="6 m." />
-        <div>
-          <h2 className="text-xl font-bold">Développeur React | Next.js | Symfony | Rust</h2>
-          <br />
-          <p>
-            <strong>Contexte :</strong> Startup dans le secteur de l’immobilier de bureau
-          </p>
-          <br />
-          <p>
+        <div className="lg:flex lg:flex-col lg:justify-between">
+          <div className="lg:flex lg:flex-col lg:h-1/3 lg:justify-between">
+            <h2 className="text-xl font-bold">Développeur React | Next.js | Symfony | Rust</h2>
+            <p>
+              <strong>Contexte :</strong> Startup dans le secteur de l’immobilier de bureau
+            </p>
+          </div>
+          <div className="lg:h-2/3 lg:pt-5">
             Création d’un produit tech innovant dans le secteur de l’immobilier de bureau, tout en
             maintenant le MVP utilisé par les équipes Sales et CSM, et servant de vitrine pour les
             clients. Poste multi-casquette <TextHighlighted>DevOps</TextHighlighted>.
@@ -29,41 +29,41 @@ export default function Page() {
             est effectué via <TextHighlighted>Git</TextHighlighted> et le déploiement est géré avec les <TextHighlighted>GitHub Actions</TextHighlighted>. La gestion de
             l’infrastructure sur le cloud est faite avec
             <TextHighlighted>GCP</TextHighlighted> et <TextHighlighted>Kubernetes</TextHighlighted>.
-          </p>
+          </div>
         </div>
       </TextBlock>
 
-      <TextBlock classes="bg-black text-white flex">
+      <TextBlock classes="bg-black text-white flex lg:min-h-64">
         <ExperienceDuration isBackgroundBlack yearStart="2021" yearEnd="2023" duration="2 a." />
-        <div>
-          <h2 className="text-xl font-bold">Développeur React | Symfony</h2>
-          <br />
-          <p>
-            <strong>Contexte :</strong> Création d&apos;une application de gestion des centre de tri de déchets
-          </p>
-          <br />
-          <p>
+        <div className="lg:flex lg:flex-col lg:justify-between">
+          <div className="lg:flex lg:flex-col lg:h-1/3 lg:justify-between">
+            <h2 className="text-xl font-bold">Développeur React | Symfony</h2>
+            <p>
+              <strong>Contexte :</strong> Création d&apos;une application de gestion des centre de tri de déchets
+            </p>
+          </div>
+          <div className="lg:h-2/3 lg:pt-5">
             Remplacement de l&apos;ancien fonctionnement par fichiers excel par une application web moderne en
             <TextHighlighted>Symfony</TextHighlighted> et <TextHighlighted>React</TextHighlighted> dans
             un contexte agile.
-          </p>
+          </div>
         </div>
       </TextBlock>
 
-      <TextBlock classes="flex">
+      <TextBlock classes="flex lg:min-h-64">
         <ExperienceDuration yearStart="2021" yearEnd="2021" duration="6 m." />
-        <div>
-          <h2 className="text-xl font-bold">Développeur React | Symfony</h2>
-          <br />
-          <p>
-            <strong>Contexte :</strong> Refonte du back-office d’administration
-          </p>
-          <br />
-          <p>
+        <div className="lg:flex lg:flex-col lg:justify-between">
+          <div className="lg:flex lg:flex-col lg:h-1/3 lg:justify-between">
+            <h2 className="text-xl font-bold">Développeur React | Symfony</h2>
+            <p>
+              <strong>Contexte :</strong> Refonte du back-office d’administration
+            </p>
+          </div>
+          <div className="lg:h-2/3 lg:pt-5">
             Création d&apos;un back-office en Symfony et React,
             l&apos;objectif étant de migrer l&apos;ensemble des fonctionnalités de l&apos;ancienne version vers la nouvelle version.
             Intégration d&apos;une équipe en full-remote dans un contexte agile.
-          </p>
+          </div>
         </div>
       </TextBlock>
     </>

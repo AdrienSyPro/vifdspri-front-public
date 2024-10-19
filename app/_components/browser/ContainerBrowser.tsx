@@ -1,5 +1,3 @@
-import FooterBrowser from "./FooterBrowser";
-import HeaderBrowser from "./HeaderBrowser";
 import NavBrowser from "./NavBrowser";
 
 export interface Props {
@@ -9,20 +7,13 @@ export interface Props {
 export default function ContainerBrowser({ children }: Props) {
   return (
     <>
-      <header>
-        <HeaderBrowser />
-      </header>
-
-      <nav>
-        <NavBrowser />
-      </nav>
+      <NavBrowser />
       
       <main>
         {children}
       </main>
 
       <footer>
-        <FooterBrowser />
       </footer>
     </>
   );

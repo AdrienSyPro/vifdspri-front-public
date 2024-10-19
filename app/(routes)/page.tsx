@@ -10,7 +10,7 @@ export default function Page() {
         <div className="flex justify-center items-center">
           <Image
             alt="Profile picture"
-            className="rounded-full w-40 m-5 shadow-lg"
+            className="rounded-full w-40 lg:w-64 m-5 shadow-lg"
             src="/profile_picture.jpeg"
             width={160}
             height={160}
@@ -18,7 +18,7 @@ export default function Page() {
         </div>
       </TextBlock>
 
-      <TextBlock>
+      <TextBlock classes="lg:text-xl lg:text-center lg:rounded-full lg:p-14 lg:shadow-lg">
         <p>
           <em>
             En tant que développeur Senior, j&apos;ai pu acquérir toutes les compétences nécessaires au développement d&apos;un produit logiciel.
@@ -38,8 +38,7 @@ export default function Page() {
         </p>
       </TextBlock>
 
-      <div className="container mx-auto p-6">
-      
+      <TextBlock>
         <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -63,7 +62,7 @@ export default function Page() {
             <Image alt="Rust programming language" className="mx-auto w-16 h-16" src="/rust_logo.svg" width={160} height={160} />
           </Card>
         </div>
-      </div>
+      </TextBlock>
     </>
   );
 }
