@@ -2,16 +2,7 @@ import clsx from "clsx";
 import usePageDisplayContext from "@/app/_hooks/mobile/usePageDisplayContext";
 import Link from "next/link";
 import Image from "next/image";
-
-interface ImageLoaderProps {
-  src: any;
-  width: any;
-  quality?: number | undefined;
-}
-
-const imageLoader = ({ src, width, quality }: ImageLoaderProps) => {
-  return `https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/${src}`;
-}
+import { imageLoader } from "@/app/_utils/imageLoader";
 
 interface Props {
   children: React.ReactNode;
